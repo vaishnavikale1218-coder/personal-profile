@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Profile</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- Header section contains name and navigation -->
+    <!-- Header section -->
     <header>
         <h1>Vaishnavi Patil</h1>
         <p>Web Development Intern</p>
 
-        <!-- Navigation using semantic <nav> -->
+        <!-- Navigation Bar -->
         <nav>
-            <a href="#about">About</a> |
-            <a href="#education">Education</a> |
-            <a href="#skills">Skills</a> |
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -28,25 +27,25 @@
 
     <!-- About section -->
     <section id="about">
-    <h2>About Me</h2>
+        <h2>About Me</h2>
 
-    <div class="about-container">
-        <img src="profile.jpg.jpeg" alt="Profile photo of Vaishnavi Patil">
+        <!-- Flexbox container -->
+        <div class="about-container">
+            <img src="profile.jpg.jpeg" alt="Profile photo of Vaishnavi Patil">
 
-        <p>
-            I am a Computer Science student interested in web development.
-            I enjoy learning HTML, CSS, and JavaScript and building simple projects.
-        </p>
-    </div>
-</section>
-
+            <p>
+                I am a Computer Science student interested in web development.
+                I enjoy learning HTML, CSS, and JavaScript and building simple projects.
+            </p>
+        </div>
+    </section>
 
     <!-- Education section -->
     <section id="education">
         <h2>Education</h2>
 
         <article>
-            <h3>Bachelor of Engineering (AI)</h3>
+            <h3>Bachelor of Engineering (Artificial Intelligence)</h3>
             <p>NMVPM’s College of Engineering</p>
             <p>Year: 2024 – 2027</p>
         </article>
@@ -56,12 +55,12 @@
     <section id="skills">
         <h2>Skills</h2>
 
-        <ul>
+        <!-- Flexbox skills list -->
+        <ul class="skills-list">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript (Basic)</li>
             <li>Python (Basic)</li>
-            
         </ul>
     </section>
 
@@ -81,7 +80,7 @@
 
     <hr>
 
-    <!-- Footer section -->
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Vaishnavi Patil. All rights reserved.</p>
     </footer>
