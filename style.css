@@ -1,139 +1,85 @@
-/* ---------------- RESET & BODY ---------------- */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Body background */
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
     color: #333;
     line-height: 1.6;
 }
 
-/* ---------------- HEADER ---------------- */
+/* Header */
 header {
     background-color: #2c3e50;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-
-    display: flex;
-    /* Enables Flexbox */
-
-    flex-direction: column;
-    /* Stacks content vertically */
-
-    align-items: center;
-    /* Centers items horizontally */
 }
 
-header h1 {
-    margin-bottom: 5px;
-}
-
-header p {
-    margin-bottom: 10px;
-}
-
-/* ---------------- NAVIGATION ---------------- */
+/* Navigation */
 nav {
-    display: flex;
-    /* Aligns nav links in a row */
-
-    gap: 15px;
-    /* Space between links */
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-}
-
-/* Active page highlight */
-nav a.active {
+    margin: 0 15px;
     font-weight: bold;
-    border-bottom: 2px solid #fff;
 }
 
-/* ---------------- SECTIONS ---------------- */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
 section {
-    padding: 30px;
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
     text-align: center;
 }
 
-section h2 {
-    margin-bottom: 15px;
-}
-
-/* ---------------- ABOUT SECTION ---------------- */
-.about-container {
-    display: flex;
-    /* Aligns image & text side by side */
-
-    justify-content: center;
-    /* Centers content horizontally */
-
-    align-items: center;
-    /* Vertically centers items */
-
-    gap: 20px;
-
-    flex-wrap: wrap;
-    /* Makes it responsive */
-}
-
-.about-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* ---------------- SKILLS SECTION ---------------- */
+/* Skills list */
 .skills-list {
-    display: flex;
-    /* Aligns skills in a row */
-
-    justify-content: center;
-    /* Centers skills */
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-    /* Skills wrap on small screens */
-
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .skills-list li {
-    background-color: #e0e0e0;
-    padding: 10px 15px;
-    border-radius: 6px;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
-/* ---------------- FOOTER ---------------- */
+/* Projects */
+section p {
+    text-align: center;
+}
+
+/* Footer */
 footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
-}
-
-/* ---------------- RESPONSIVE DESIGN ---------------- */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        /* Nav links stack vertically on mobile */
-    }
-
-    .about-container {
-        flex-direction: column;
-        /* Image & text stack vertically */
-        text-align: center;
-    }
+    margin-top: 40px;
 }
